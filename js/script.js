@@ -14,10 +14,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (error === 0) {
       form.classList.add("_sending");
-      let response = await fetch("http://mysite/form/sendmail.php", {
-        method: "POST",
-        body: formData,
-      });
+      let response = await fetch(
+        "https://kotbegemot97.github.io/Testing_form/sendmail.php",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
       if (response.ok) {
         let result = await response.json();
         alert(result.message);
@@ -86,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // `;
 
   formImage.addEventListener("change", (e) => {
-    let json = fetch("http://mysite/form/db/db.json")
+    let json = fetch("https://kotbegemot97.github.io/Testing_form/db/db.json")
       .then((res) => res.json())
       .then((data) => {
         const choice = data[e.target.value - 1];

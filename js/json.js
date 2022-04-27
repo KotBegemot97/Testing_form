@@ -1,5 +1,5 @@
 async function getCards() {
-    const response = await fetch("http://mysite/form/db/db.json");
+    const response = await fetch("https://kotbegemot97.github.io/Testing_form/db/db.json");
     const data = await response.json();
 
     const vid = data[3].id;
