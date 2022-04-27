@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/json.js" defer></script>
+    <script src="./js/script.js" defer></script>
+    <title>Работа с формой</title>
+</head>
+<body>
+    <main class="main">
+        <h2 class="main-title">Горизонтальные картины</h2>
+        <div class="horizontal-cards">
+            
+        </div>
+        <h2 class="main-title">Вертикальные картины</h2>
+        <div class="vertical-cards">
+            
+        </div>
+
+    </main>
+
+    <div class="wrapper">
+        <div class="form">
+            <form action="#" id="form" class="form__body">
+                <h1 class="form__title">Отправка данных на почту</h1>
+                <div class="form__item">
+                    <label for="fromName" class="form__label">Имя*:</label>
+                    <input id="fromName" type="text" name="name" class="form__input req">
+                </div>
+                <div class="form__item">
+                    <label for="fromEmail" class="form__label">E-mail*:</label>
+                    <input id="fromEmail" type="text" name="email" class="form__input req email">
+                </div>
+                <div class="form__item">
+                    <label for="fromMessage" class="form__label">Сообщение:</label>
+                    <textarea name="message" id="fromMessage" class="form__input"></textarea>
+                </div>
+                <div class="form__item">
+                    <div class="form__label">Выбрать картину:</div>
+                    <select id="formImage" name="choice" class="select">
+                    </select>
+                    <div id="formPreview" class="file__preview"></div>
+                </div>
+                <div class="form__item">
+                    <div class="checkbox">
+                        <input id="fromAgreement" checked type="checkbox" name="agreement" class="checkbox__input req">
+                        <label for="fromAgreement" class="checkbox__label"><span>
+                            Я даю согласие на обработку персональных данных в соответствии с <a href="#">условием</a>*
+                        </span></label>
+                    </div>
+                </div>
+                <button type="submit" class="form__button">Отправить</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

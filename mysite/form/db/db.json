@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "img": "./db/img/p1.jpg",
+        "position": "h",
+        "name": "ellow bird"
+    },
+    {
+        "id": "2",
+        "img": "./db/img/p2.jpeg",
+        "position": "h",
+        "name": "white birds"
+    },
+    {
+        "id": "3",
+        "img": "./db/img/p3.jpg",
+        "position": "h",
+        "name": "red birds"
+    },
+    {
+        "id": "4",
+        "img": "./db/img/p4.jpg",
+        "position": "v",
+        "name": "grey bird"
+    }
+]
